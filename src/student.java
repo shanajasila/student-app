@@ -64,10 +64,16 @@ public class student {
                     System.out.println("Enter Admission number");
                     String a= sc.next();
                     for (student e1 :stud){
-                        if(a==e1.adno){
+                        if(e1.adno.equals(a)){
                             stud.remove(e1);
                         }
                     }
+                    break;
+                case 5:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Please select from option");
                     break;
             }
         }
