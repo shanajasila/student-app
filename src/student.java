@@ -42,6 +42,24 @@ public class student {
                         System.out.println(s1.clg);
                     }
                     break;
+                case 3:
+                    System.out.println("Enter Admission number");
+                    String c= sc.next();
+                    int flag=0;
+                    for(student e2 :stud) {
+                        if (e2.adno.equals(c)) {
+                            System.out.println("\nStudent found\n");
+                            System.out.println(e2.name);
+                            System.out.println(e2.adno);
+                            System.out.println(e2.rollno);
+                            System.out.println(e2.clg);
+                            flag = 1;
+                        }
+                    }
+                    if(flag==0){
+                        System.out.println("Student not found");
+                    }
+                    break;
             }
         }
     }
