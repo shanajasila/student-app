@@ -34,6 +34,14 @@ public class student {
                     student st=new student(name,ad,roll,clg);
                     stud.add(st);
                     break;
+                case 2:
+                    for (student s1:stud){
+                        System.out.println(s1.name);
+                        System.out.println(s1.adno);
+                        System.out.println(s1.rollno);
+                        System.out.println(s1.clg);
+                    }
+                    break;
             }
         }
     }
