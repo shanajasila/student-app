@@ -42,6 +42,7 @@ public class student {
                         System.out.println(s1.clg);
                     }
                     break;
+
             }
         }
     }
