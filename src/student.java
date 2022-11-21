@@ -60,6 +60,15 @@ public class student {
                         System.out.println("Student not found");
                     }
                     break;
+                case 4:
+                    System.out.println("Enter Admission number");
+                    String a= sc.next();
+                    for (student e1 :stud){
+                        if(a==e1.adno){
+                            stud.remove(e1);
+                        }
+                    }
+                    break;
             }
         }
     }
